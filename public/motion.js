@@ -117,7 +117,7 @@ Motion.Detector = function (videoTagId, canvasTagId) {
   self.detectMotion = function(blendedImageData, threshold) {
     var threshold = threshold;
     if (threshold === undefined) {
-      threshold = 10;
+      threshold = 15;
     }
     var i = 0;
     var average = 0;
