@@ -7,24 +7,24 @@
     <meta name="description" content="SecurityBot: A JavaScript + HTML5 powered ad-hoc security system.">
     <meta name="author" content="Morgan (Reece) Phillips winter2718@gmail.com @linuxpoetry"> 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <title>SecurityBot-JS :: Ein bisschen Projekte.</title>
+    <title>SecurityBot-JS</title>
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <h3 class="text-muted">Ein klein Projekt von Morgan (Reece) Phillips @linuxpoetry</h3>
+        <h3 class="text-muted">Ein klein Projekt von Morgan (Reece) Phillips @linuxpoetry mrrrgn.com</h3>
       </div>
       <div class="jumbotron">
-        <h1>SecurityBot (Alpha)</h1>
+        <h1>SecurityBot</h1>
         <p class="lead">
-            When motion is detected an image will be saved in your dropbox at Apps/SecurityBot.
+            Click record, and when motion is detected an image will be saved in your dropbox at Apps/SecurityBot.
         </p>
         
         <video id="webcam" autoplay width="640" height="480" hidden></video>
         <canvas id="source" width="640" height="480"></canvas>
         
         <p>
-          <a id="startButton" class="btn btn-lg btn-success" href="#" role="button">Record</a>
+          <button id="startButton" class="btn btn-lg btn-success" href="#" role="button">Record</button>
         </p>
       </div>
 
@@ -33,16 +33,16 @@
       </div>
 
       <div class="footer pull-right">
-        <p>&copy; Morgan Phillips 2014</p>
+        <p>&copy; mrrrgn.com 2014</p>
       </div>
 
     </div> <!-- /container -->
 
     <!-- SCRIPTS BE HERE -->
-    <script type="text/javascript" src="lib/dropbox.min.js"></script>
-    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/dropbox-datastores-1.0-latest.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./securitybot.js"></script>
     <script type="text/javascript" src="./motion.js"></script>
+    <script type="text/javascript" src="./securitybot.js"></script>
   </body>
 </html>
