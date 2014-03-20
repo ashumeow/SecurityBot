@@ -7,7 +7,8 @@ dropboxClient.authenticate(function (error, client) {
 
 /**
  * Writes a single file where the filename is the current datetime.
- * @param {string}
+ * @param {object}: data, this can be any type of byte array.  Strings included.
+ * @param {string}: ext, whatever file extension the file should have.
  */
 function writeTimeStampedFile(data, ext) {
   if (ext === undefined) {
@@ -24,7 +25,8 @@ function writeTimeStampedFile(data, ext) {
 }
 
 /**
-* Allows one to convert base64 image data to a blob.
+* Allows one to convert base64 image data to a binary byte array.
+* @param {string}: dataURL, a base64 encoded string with mimetype image/png or image/jpeg.
 */
 function convertDataURLToBlob(dataURL) {
   var string_base64 = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
@@ -68,9 +70,8 @@ var motionDetector = new Motion.Detector("webcam", "source");
 /**
  * Creates a thumbnail and saves images to Dropbox on motion events.
  */
-var ext = "image/png";
 $(motionDetector).bind("motion", function() {
-  var dataURL = motionDetector.canvas.toDataURL(ext, 0.7);
+  var dataURL = motionDetector.canvas.toDataURL("image/png");
   writeImageThumbnail(dataURL, ".png");
   writeTimeStampedFile(convertDataURLToBlob(dataURL));  
 });
