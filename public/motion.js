@@ -1,7 +1,7 @@
 /**
 *  JavaScript / HTML5 Motion Detection.  
-*  Refactored from: http://www.adobe.com/devnet/html5/articles/javascript-motion-detection.html
 *  Morgan (Reece) Phillips - winter2718@gmail.com - mrrrgn.com - @linuxpoetry
+*  Borrows snippets from: http://www.adobe.com/devnet/html5/articles/javascript-motion-detection.html
 */
 
 var Motion = Object(); // A namespace appears
