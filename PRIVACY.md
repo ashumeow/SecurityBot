@@ -4,7 +4,7 @@ If you've got any questions, feel free to [ask us](mailto:winter2718@gmail.com),
 
 This privacy statement ("Privacy Policy") covers security.mrrrgn.com and https://dl.dropboxusercontent.com/spa/clk6z0bs2bqwdrc/SecurityBot/public/.  We do not sell your information. This notice tells you what information we collect, how we use it, and steps we take to protect and secure it.
 
-Please note, the application SecurityBot uses the Dropbox-JS library and, as such, connects to your Dropbox account for data storage.  You can view Dropbox's own privacy policy here: https://www.dropbox.com/privacy2014
+Please note, this application "SecurityBot" connects to your Dropbox account for data storage.  You can view Dropbox's own privacy policy here: https://www.dropbox.com/privacy2014
 
 ## 1. Information we collect
 
