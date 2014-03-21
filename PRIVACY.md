@@ -2,7 +2,7 @@
 
 If you've got any questions, feel free to [ask us](mailto:winter2718@gmail.com), and we'll do our best to answer.
 
-This privacy statement ("Privacy Policy") covers security.mrrrgn.com and https://dl.dropboxusercontent.com/spa/clk6z0bs2bqwdrc/SecurityBot/public/.  We do not sell your information. This notice tells you what information we collect, how we use it, and steps we take to protect and secure it.
+This privacy statement ("Privacy Policy") covers security.mrrrgn.com and dl.dropboxusercontent.com/spa/clk6z0bs2bqwdrc/SecurityBot/public/.  We do not sell your information. This notice tells you what information we collect, how we use it, and steps we take to protect and secure it.
 
 Please note, this application "SecurityBot" connects to your Dropbox account for data storage.  You can view Dropbox's own privacy policy here: https://www.dropbox.com/privacy2014
 
@@ -30,13 +30,13 @@ We collect this information for several purposes:
 * To estimate the number of users accessing the service from specific geographic regions;
 * To help prevent fraud and abuse.
 
-## 2. Cookies
+## 2. Storing your information
 
-This site does not make direct use of cookies.
+Files may be stored in the apps folder within your Dropbox (Apps/SecurityBot).
 
 ## 3. Deleting your information
 
-No information is stored via this site.  All information is stored within your Dropbox.
+Files stored in the apps folder within your Dropbox (Apps/SecurityBot) may be deleted from time to time to conserve storage space.  Any retention of this information past this point is out of SecurityBot's purview.
 
 ## 4. Changes
 
@@ -48,4 +48,5 @@ If you have questions about this policy, you can contact us at [winter2718@gmail
 
 ## 6. Creative Commons
 
-This privacy policy is based on one developed by Automattic ([http://automattic.com/privacy/](http://automattic.com/privacy/)) and amended by Dreamwidth ([http://dreamwidth.org/legal/privacy](http://dreamwidth.org/legal/privacy)) and is licensed under a [Creative Commons Attribution-ShareAlike 2.5 License](http://creativecommons.org/licenses/by-sa/2.5/).
+his privacy policy is based on one developed by Automattic ([http://automattic.com/privacy/](http://automattic.com/privacy/)) and amended by Dreamwidth ([http://dreamwidth.org/legal/privacy](http://dreamwidth.org/legal/privacy)) and is licensed under a [Creative Commons Attribution-ShareAlike 2.5 License](http://creativecommons.org/licenses/by-sa/2.5/).
+
