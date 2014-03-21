@@ -10,11 +10,25 @@ Please note, the application SecurityBot uses the Dropbox-JS library and, as suc
 
 ### 1.1 Non-Personal Data
 
-This site collects no personal data about users.  It's nothing but a static webpage that writes images to your Dropbox.
+Like most website operators, we collect Non-Personal Data such as browser type, language preference, referring site, and the date and time of each visitor request.
+
+We collect this to understand how our visitors and members use our service, and use it to make decisions about how to change and adapt the service.
+
+From time to time, we may release Non-Personal Data in aggregate form (for instance, by publishing trends in site usage) to explain our reasoning in making decisions. We will not release individual information, only aggregate information.
 
 ### 1.2 Personal Data
 
 Personal Data is anything which can be used to identify or contact you, such as your legal name, email address, IP address, or physical location.
+
+#### 1.2.1 Automatically collected Personal Data
+
+We automatically collect some Personal Data, such as IP address, provided by your browser and your computer whenever you visit SecurityBot via securitybot.mrrrgn.com.
+
+We collect this information for several purposes:
+
+* To diagnose and repair network issues with your use of the site;
+* To estimate the number of users accessing the service from specific geographic regions;
+* To help prevent fraud and abuse.
 
 ## 2. Cookies
 
