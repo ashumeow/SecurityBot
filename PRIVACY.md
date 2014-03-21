@@ -48,5 +48,5 @@ If you have questions about this policy, you can contact us at [winter2718@gmail
 
 ## 6. Creative Commons
 
-his privacy policy is based on one developed by Automattic ([http://automattic.com/privacy/](http://automattic.com/privacy/)) and amended by Dreamwidth ([http://dreamwidth.org/legal/privacy](http://dreamwidth.org/legal/privacy)) and is licensed under a [Creative Commons Attribution-ShareAlike 2.5 License](http://creativecommons.org/licenses/by-sa/2.5/).
+This privacy policy is based on one developed by Automattic ([http://automattic.com/privacy/](http://automattic.com/privacy/)) and amended by Dreamwidth ([http://dreamwidth.org/legal/privacy](http://dreamwidth.org/legal/privacy)) and is licensed under a [Creative Commons Attribution-ShareAlike 2.5 License](http://creativecommons.org/licenses/by-sa/2.5/).
 
