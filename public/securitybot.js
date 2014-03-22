@@ -1,9 +1,4 @@
 var dropboxClient = new Dropbox.Client({ key: 'asz5juc1q10mhtg' });
-dropboxClient.authenticate(function (error, client) {
-  if (error) {
-    console.error('Error: ' + error);
-  }
-});
 
 /**
  * Writes a single file where the filename is the current datetime.
@@ -56,15 +51,6 @@ function writeImageThumbnail(data) {
   snapshotContainer.html(current + "<img width='160px' height='120px' src='" + data +  "'></img>");
 }
 
-/**
- * Flip the "Record" button from green to red.
- */
-var startButton = $("#startButton");
-function startButtonToggle() {
-  startButton.toggleClass("btn-success");
-  startButton.toggleClass("btn-danger");
-}
-
 var motionDetector = new Motion.Detector("webcam", "source");
 
 /**
@@ -77,19 +63,63 @@ $(motionDetector).bind("motion", function() {
 });
 
 /**
- * Start/Stop detection on button clicks.
+ * Start/Stop detection.
  */
 var detectionRunning = false;
-startButton.on("click", function() {
-  if (detectionRunning === false) {
-    startButtonToggle();
-    console.log("Starting Detection....");
-    detectionRunning = true;
-    motionDetector.init(); 
-  } else {
-    startButtonToggle();
-    console.log("Stopping Detection....");
-    detectionRunning = false;
-    motionDetector.stop();
+function toggleDetection() {
+  if (dropboxClient.isAuthenticated() === true) {
+      if (detectionRunning === false) {
+        startButtonToggle();
+        console.log("Starting Detection....");
+        detectionRunning = true;
+        motionDetector.init(); 
+      } else {
+        startButtonToggle();
+        console.log("Stopping Detection....");
+        detectionRunning = false;
+        motionDetector.stop();
+      }
   }     
+}
+
+/**
+ * Log users into Dropbox
+ */
+var loginModal = $(".modal");
+var loginButton = $("#loginButton");
+loginButton.on("click", function() {
+  loginModal.modal("hide");
+  console.log("Logging in to Dropbox....");
+  dropboxClient.authenticate(function (error, client) {
+    if (error) {
+      console.error('Error: ' + error);     }
+  });
+  toggleDetection();
+});
+
+/**
+ * Flip the "Record" button from green to red.
+ */
+var startButton = $("#startButton");
+function startButtonToggle() {
+  startButton.toggleClass("btn-success");
+  startButton.toggleClass("btn-danger");
+}
+
+/**
+ * Record button listener.
+ */
+startButton.on("click", function() {
+  if (dropboxClient.isAuthenticated() === false) {
+    console.log("User is not logged in.");
+    if (window.location.toString().search("#access_token") > -1) {
+      dropboxClient.authenticate(function (error, client) {
+        if (error) {
+          console.error('Error: ' + error);     }
+      });
+    } else {
+      loginModal.modal();
+    }
+  }
+  toggleDetection();
 });

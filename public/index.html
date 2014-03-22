@@ -21,7 +21,8 @@
       <div class="jumbotron">
         <h1>SecurityBot</h1>
         <p class="lead">
-        Click record, when motion is detected an image will be saved to your dropbox at Apps/SecurityBot. {<a href="https://github.com/mrrrgn/SecurityBot/wiki/Privacy-Policy">privacy policy</a>}
+        Click record, when motion is detected an image will be saved to your dropbox at Apps/SecurityBot. 
+        Click <a href="https://github.com/mrrrgn/SecurityBot/wiki/Privacy-Policy">here</a> to view the app's privacy policy.
         </p>
         
         <video id="webcam" autoplay width="640" height="480" hidden></video>
@@ -42,11 +43,27 @@
 
     </div> <!-- /container -->
 
+  </body>
+    <div class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+            <h4>SecurityBot needs to use your Dropbox for snapshot storage.</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">No thanks</button>
+            <button type="button" id="loginButton" class="btn btn-primary">Make it so</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
     <!-- SCRIPTS BE HERE -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/dropbox-datastores-1.0-latest.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./motion.js"></script>
     <script type="text/javascript" src="./securitybot.js"></script>
-  </body>
 </html>
