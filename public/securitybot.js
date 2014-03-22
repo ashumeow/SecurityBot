@@ -85,7 +85,7 @@ function toggleDetection() {
 /**
  * Log users into Dropbox
  */
-var loginModal = $(".modal");
+var loginModal = $("#loginModal");
 var loginButton = $("#loginButton");
 loginButton.on("click", function() {
   loginModal.modal("hide");
